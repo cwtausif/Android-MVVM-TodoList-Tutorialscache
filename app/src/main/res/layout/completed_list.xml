@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card:cardCornerRadius="5dp"
+    card:cardElevation="5dp"
+    card:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/tv_item_title"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_title"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <ImageButton
+            android:id="@+id/undo_todo"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@drawable/undoicon"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="45dp"
+            android:layout_centerVertical="true">
+        </ImageButton>
+        <ImageButton
+            android:id="@+id/delete_todo"
+            android:layout_width="40dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_delete_red_600_24dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+        </ImageButton>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

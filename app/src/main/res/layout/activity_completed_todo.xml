@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.CompletedTodoActivity">
+    <ImageView
+        android:id="@+id/empty"
+        android:src="@drawable/emptytodo"
+        android:layout_width="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="140dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_item_completed"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
